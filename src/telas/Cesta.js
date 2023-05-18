@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, Dimensions, View} from "react-native";
+import { StyleSheet, Text, Dimensions, View, Image} from "react-native";
 import topo from "../../assets/topo.png";
 import logo from "../../assets/logo.png";
 
@@ -30,6 +30,7 @@ export default function Cesta() {
        </View>
     </>
 }  
+
 
 const estilos = StyleSheet.create({
     topo: {
