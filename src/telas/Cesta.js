@@ -12,22 +12,23 @@ export default function Cesta() {
 
   return <>
        <Image source={topo} style={estilos.topo} />
-       <Text style={estilos.titulo}>Detelhe da Cesta</Text>
+       <Texto style={estilos.titulo}>Detelhe da Cesta</Texto>
 
        <View style={estilos.cesta}>
-            <Text style={estilos.nome}>Cesta de verdeuras</Text>
+            <Texto style={estilos.nome}>Cesta de verdeuras</Texto>
 
             <View style={estilos.fazenda}>
 
                 <Image source={logo} style={estilos.imagemFazenda} />
-                <Text style={estilos.nomeFazenda}>Jenny Jack Farm</Text>
+                <Texto style={estilos.nomeFazenda}>Jenny Jack Farm</Texto>
 
             </View> 
            
             <Texto style={estilos.descricao}>Uma cesta com produtos selecionados cuidadosamente da fazenda
                 direto para sua cozinha
             </Texto>
-            <Text style={estilos.preco}>R$ 40,00</Text>
+
+            <Texto style={estilos.preco}>R$ 40,00</Texto>
        </View>
     </>
 }  
@@ -60,13 +61,13 @@ const estilos = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         color: "#464646",   
-        fontFamily: "Montserrat_700Bold",
+        fontWeight: "bold",
     },
     nomeFazenda: {
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
-        fontFamily: "Montserrat_400Regular",
+      
     },
 
     fazenda: {
