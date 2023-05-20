@@ -2,10 +2,7 @@ import { StatusBar, SafeAreaView, StyleSheet, Text, View, Image } from 'react-na
 import React from 'react';
 import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
 import { Montserrat_400Regular, Montserrat_700Bold} from '@expo-google-fonts/montserrat';
-import Cesta from './src/telas/Cesta.js';
-
-
-
+import Cesta from './src/telas/Cesta/Cesta';
 
 
 
@@ -20,12 +17,10 @@ export default function App() {
     return <View />;
   }
 
-
-
   return (
     <View>
       <StatusBar />
-      <Cesta />
+     <Cesta />
     </View>
   );
 }
